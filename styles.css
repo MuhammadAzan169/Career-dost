@@ -1,0 +1,179 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+    background: #1e1e1e;
+    height: 100%;
+}
+
+/* Header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+header ul li a.active, header ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #003366, #000);
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: #fff;
+    color: #003366;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+/* Main Content */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.spaced {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+h2.spaced {
+    margin-top: 30px;
+}
+
+/* Features Section */
+.features, .testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background: #222;
+}
+
+.features h2, .testimonials h2 {
+    margin-bottom: 30px;
+}
+
+.grid-3, .grid-2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 30px 0;
+}
+
+.card, .testimonial {
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial span {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+/* About Us Section Specific */
+ul.spaced {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Animations */
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+}
